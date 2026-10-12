@@ -336,6 +336,20 @@ body {
   box-shadow: 0 0 18px rgba(255, 59, 167, 0.3);
 }
 
+.credit {
+  text-align: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  padding-bottom: 6px;
+}
+
+.credit span {
+  color: var(--o);
+  font-weight: 700;
+  text-shadow: 0 0 14px var(--o-glow);
+}
+
 @media (max-width: 420px) {
   body {
     padding: 24px 12px;
