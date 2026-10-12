@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Tic<span>Tac</span>Toe</h1>
+      <p class="subtitle">A futuristic classic</p>
+    </header>
+
+    <div class="mode-switch" role="tablist" aria-label="Game mode">
+      <button class="mode-btn active" data-mode="friend" role="tab" aria-selected="true">Play vs Friend</button>
+      <button class="mode-btn" data-mode="ai" role="tab" aria-selected="false">Play vs AI</button>
+    </div>
+
+    <div class="scoreboard">
+      <div class="score-card x">
+        <span class="score-label">Player X</span>
+        <span class="score-value" id="score-x">0</span>
+      </div>
+      <div class="score-card o">
+        <span class="score-label">Player O</span>
+        <span class="score-value" id="score-o">0</span>
+      </div>
+      <div class="score-card ai hidden" id="ai-card">
+        <span class="score-label">AI</span>
+        <span class="score-value" id="score-ai">0</span>
+      </div>
+      <div class="score-card tie">
+        <span class="score-label">Ties</span>
+        <span class="score-value" id="score-ties">0</span>
+      </div>
+    </div>
+
+    <div class="status" id="status" aria-live="polite">Player X's turn</div>
+
+    <div class="board" id="board" role="grid" aria-label="Tic-Tac-Toe board">
+      <button class="cell" data-index="0" role="gridcell" aria-label="Cell 1"></button>
+      <button class="cell" data-index="1" role="gridcell" aria-label="Cell 2"></button>
+      <button class="cell" data-index="2" role="gridcell" aria-label="Cell 3"></button>
+      <button class="cell" data-index="3" role="gridcell" aria-label="Cell 4"></button>
+      <button class="cell" data-index="4" role="gridcell" aria-label="Cell 5"></button>
+      <button class="cell" data-index="5" role="gridcell" aria-label="Cell 6"></button>
+      <button class="cell" data-index="6" role="gridcell" aria-label="Cell 7"></button>
+      <button class="cell" data-index="7" role="gridcell" aria-label="Cell 8"></button>
+      <button class="cell" data-index="8" role="gridcell" aria-label="Cell 9"></button>
+    </div>
+
+    <div class="controls">
+      <button class="btn primary" id="reset-board">Reset Board</button>
+      <button class="btn ghost" id="reset-scores">Reset Scores</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
